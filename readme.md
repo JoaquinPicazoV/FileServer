@@ -39,7 +39,7 @@ python3 server.py
 ```bash
 git clone {url}
 ```
-### 3. Ejecutar "client.py".
+### 2. Ejecutar "client.py".
 ```bash
 python client.py
 ```
@@ -50,6 +50,6 @@ python3 client.py
 ```bash
 conectarse 192.168.18.217 5000
 ```
-### 3. Empezar a interactuar con los comandos existentes que otorga el programa.
+### 4. Empezar a interactuar con los comandos existentes que otorga el programa.
 
 
