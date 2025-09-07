@@ -1,4 +1,4 @@
-# 📁 Proyecto de Transferencia de Archivos en Red (Cliente-Servidor en Python)
+# 📁 Proyecto de Transferencia de Archivos en Red (Cliente-Servidor en Python) usando 🐳DOCKER
 
 Este proyecto implementa un sistema de transferencia de archivos entre un servidor y cliente usando sockets TCP. Está diseñado para funcionar en una red local, permitiendo subir y descargar archivos. Ideal para equipo Linux (ej: Ubuntu).
 
@@ -46,7 +46,7 @@ python client.py
 ```bash
 python3 client.py
 ```
-### 3. Usar el comando "conectarse" entregando la IP del host en la red y el puerto (definidos en "server.py")
+### 3. Usar el comando "conectarse" entregando la IP del host en la red y el puerto (definidos en "server.py"), por ejemplo:
 ```bash
 conectarse 192.168.18.217 5000
 ```
@@ -71,7 +71,7 @@ sudo apt update
 sudo apt install python3-setuptools
 ```
 
-### 3. Dockerizar el proyecto completo en la raiz del proyecto
+### 3. Entrar al proyecto clonado y dockerizar el proyecto completo en la raiz del proyecto
 ```bash
 sudo docker-compose up --build
 ```
