@@ -39,7 +39,7 @@ python3 server.py
 ```bash
 git clone {url}
 ```
-### 3. Ejecutar "client.py".
+### 2. Ejecutar "client.py".
 ```bash
 python client.py
 ```
@@ -50,7 +50,9 @@ python3 client.py
 ```bash
 conectarse 192.168.18.217 5000
 ```
-### 3. Empezar a interactuar con los comandos existentes que otorga el programa.
+### 4. Empezar a interactuar con los comandos existentes que otorga el programa.
+
+---
 
 # Pasos para ejecución para DOCKERIZAR EL SERVIDOR
 ### 1. Clonar repositorio desde ubuntu
@@ -79,21 +81,28 @@ sudo docker-compose up --build
 sudo docker-compose up --build server
 ```
 
+---
+
 # Pasos para ejecución para conectar cliente con IMAGEN DOCKER (WINDOWS)
 ### 1. Descargar la imagen para el cliente
 ```bash
-docker pull joaquinpicazo/cliente:v0
+docker pull joaquinpicazo/client:v0
 ```
 ### 2. Conectarse al servidor usando la imagen
 ```bash
-docker run -it --rm -v C:{tu_ruta_windows}:/app/archivos joaquinpicazo/client:v0
+docker run -it --rm -v C:{path_windows}:/app/archivos joaquinpicazo/client:v0
 ```
-### 3. Usar los comandos con la sintaxis correcta
-### {ip_ubuntu_host} = ip de la máquina que hostea servidor docker      -      {puerto} = puerto que esta abierto en host ubuntu para conectarse 
+### Por ejemplo:
 ```bash
-conectarse {ip_ubuntu_host} {puerto}
+docker run -it --rm -v C:\Users\pepe\Desktop\universidad:/app/archivos joaquinpicazo/client:v0
 ```
-### {nombre_archivo} = nombre del archivo del servidor   -    archivos/{nombre_archivo} = Nombre archivo para guardarlo en carpeta local montada en contenedor
+
+### 3. Usar los comandos con la sintaxis correcta
+### {ip_ubuntu_host} = ip de la máquina que hostea servidor docker
+```bash
+conectarse {ip_ubuntu_host} 5000
+```
+### {nombre_archivo} = nombre del archivo del servidor  -  archivos/{nombre_archivo} = Nombre archivo para guardarlo en carpeta local montada en contenedor
 ```bash
 descargar {nombre_archivo} archivos/{nombre_archivo}
 ```
