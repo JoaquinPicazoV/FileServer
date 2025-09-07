@@ -101,4 +101,3 @@ descargar {nombre_archivo} archivos/{nombre_archivo}
 ```bash
 cargar archivos/{nombre_archivo}
 ```
-### 4. Ejemplos
