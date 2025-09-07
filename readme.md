@@ -51,6 +51,13 @@ python3 client.py
 conectarse 192.168.18.217 5000
 ```
 ### 4. Empezar a interactuar con los comandos existentes que otorga el programa.
+### Como no está en contenedor docker, no es necesario usar una carpeta del contenedor relacionada a una carpeta local. Simplemente el archivo debe exisir en el directorio actual local.
+```bash
+descargar {nombre_archivo}
+```
+```bash
+cargar {nombre_archivo}
+```
 
 ---
 
