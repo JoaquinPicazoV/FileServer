@@ -54,7 +54,7 @@ conectarse 192.168.18.217 5000
 
 ---
 
-# Pasos para ejecución para DOCKERIZAR EL SERVIDOR
+# 🐳 Pasos para ejecución para DOCKERIZAR EL SERVIDOR
 ### 1. Clonar repositorio desde ubuntu
 ```bash
 git clone https://github.com/JoaquinPicazoV/FileServer.git
@@ -83,7 +83,7 @@ sudo docker-compose up --build server
 
 ---
 
-# Pasos para ejecución para conectar cliente con IMAGEN DOCKER (WINDOWS)
+# ⚙️📦 Pasos para ejecución para conectar cliente con IMAGEN DOCKER (WINDOWS)
 ### 1. Descargar la imagen para el cliente
 ```bash
 docker pull joaquinpicazo/client:v0
