@@ -12,11 +12,7 @@ services:
       - ./data:/data          
     ports:
       - "5000:5000" 
-    healthcheck:
-      test: ["CMD-SHELL", "python -c 'import socket; s=socket.socket(); s.settimeout(1); s.connect((\"127.0.0.1\", 5000)); print(\"ok\")'"]
-      interval: 10s
-      timeout: 3s
-      retries: 5
+   
 
   client:
     build:
@@ -25,5 +21,4 @@ services:
     stdin_open: true
     tty: true
     depends_on:
-      server:
-        condition: service_healthy
+      - server

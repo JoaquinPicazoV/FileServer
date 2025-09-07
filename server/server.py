@@ -3,7 +3,7 @@ import os, socket, threading, re, sys
 from typing import Tuple
 
 # Configuramos los parametros principales
-ANFITRION = os.environ.get("HOST", "192.168.18.217")
+ANFITRION = os.environ.get("HOST", "0.0.0.0")
 PUERTO = int(os.environ.get("PORT", "5000"))
 CARPETA_BASE = os.environ.get("FILES_DIR", "/data")
 MAXIMO_SUBIDA = int(os.environ.get("MAX_UPLOAD_BYTES", "5242880"))

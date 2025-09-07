@@ -76,7 +76,7 @@ def cargar(conexion, ruta_local, nombre_remoto=None):
 # Usa shlex para dividir la entrada por partes, separando e identificando las palabras
 # Antes de cargar/descargar hay que conectarse al servidor
 def main():
-    #print("CLIENTE\nComandos: \nconectarse <host> <puerto> \ndescargar <remoto> [local] \ncargar <local> [remoto] \nsalir")
+    #print("CLIENTE\nComandos: \nconectarse <host> <puerto> \ndescargar <nombre> [carpeta_contenedor/nombre] \ncargar [carpeta_contenedor/nombre] \nsalir")
     print("\033[1;36m####################CLIENTE####################\033[0m")
     print("\033[1;33m > Comandos:\033[0m")
     print("\033[0;32m  conectarse <ip_host> <puerto>\033[0m")
